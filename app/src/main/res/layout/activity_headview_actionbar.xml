@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actionbar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/actionbar_bg"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:background="@drawable/actionbar_item_selector"
+        android:clickable="true"
+        android:id="@+id/ll_actionbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_item_width_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tv_actionbar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_item_width_height"
+            android:paddingLeft="@dimen/default_item_padding"
+            android:paddingRight="@dimen/default_item_padding"
+            android:textColor="@color/action_bar_title_color"
+            android:textSize="@dimen/actionbar_title_right_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lll_actionbar_left"
+            android:layout_width="@dimen/actionbar_item_width_height"
+            android:layout_height="@dimen/actionbar_item_width_height"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--  android:layout_margin="12dp" -->
+            <ImageView
+                android:id="@+id/iv_actionbar_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_actionbar_title"
+        android:padding="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLength="15"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        tools:text="Hotel"
+        android:textColor="@color/action_bar_title_color"
+        android:textSize="@dimen/actionbar_title_text_size" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        tools:visibility="gone"
+        android:id="@+id/ll_actionbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_item_width_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/actionbar_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_actionbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_item_padding"
+            android:paddingRight="@dimen/default_item_padding"
+            tools:text="Hotel"
+            android:textColor="@color/action_bar_title_color"
+            android:textSize="@dimen/actionbar_title_right_text_size"
+            android:visibility="gone" />
+
+        <!-- android:scaleType="fitXY"-->
+        <ImageView
+            android:id="@+id/iv_actionbar_right"
+            android:layout_width="@dimen/actionbar_item_width_height"
+
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

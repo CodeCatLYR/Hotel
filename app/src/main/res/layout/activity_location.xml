@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_acitivity_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        layout="@layout/activity_headview_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:id="@+id/ll_activity_location_loc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_item_rl_width_height"
+                android:background="@color/base_acitivity_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etMLCityPoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="@dimen/actionbar_userinfo_bottom_gap_view_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/merchants_service_comment_edit_bg"
+                    android:drawableLeft="@drawable/jl_list_location_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/the_current_location"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="?activity_et_content_title_color"
+                    android:textColorHint="?activity_et_content_title_color_hint"
+                    android:textSize="@dimen/default_item_name"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/rl_activity_location_locate"
+                    android:layout_width="@dimen/default_item_rl_width_height"
+                    android:layout_height="@dimen/default_item_rl_width_height"
+                    android:paddingRight="@dimen/actionbar_userinfo_bottom_gap_view_height"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:src="@drawable/selector_ib_locate"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMLMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_activity_location_loc"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <com.amap.api.maps2d.MapView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                   <!-- <com.baidu.mapapi.map.MapView
+                        android:id="@+id/mMapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true" />-->
+
+                    <LinearLayout
+                        android:id="@+id/llLocationTipMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tvShowLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/location_tips"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textColor="@color/tv_color_white"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivLocationTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-6dp"
+                                android:src="@drawable/icon_gcoding" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                   <!--  <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="80dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btMapZoomIn"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/selector_bt_map_jia" />
+
+                        <Button
+                            android:id="@+id/btMapZoomOut"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/selector_bt_map_jian" />
+                    </LinearLayout>
+                     <ImageButton
+                        android:id="@+id/ibMLLocate"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:src="@drawable/selector_ib_locate" /> -->
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6" >
+
+                    <ImageView
+                        android:id="@+id/ivMLPLoading"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/loading"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@+id/lvPoiList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@color/tou_ming"
+                        android:dividerHeight="2dp"
+                        android:fastScrollEnabled="true"
+                        android:scrollbars="none"
+                        android:scrollingCache="false"
+                        android:visibility="gone" >
+                    </ListView>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/lvMLCityPoi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_activity_location_loc"
+                android:layout_margin="5dp"
+                android:cacheColorHint="@color/tou_ming"
+                android:dividerHeight="2dp"
+                android:fastScrollEnabled="true"
+                android:scrollbars="none"
+                android:scrollingCache="false"
+                android:visibility="gone" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

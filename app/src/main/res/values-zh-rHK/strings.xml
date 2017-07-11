@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickLink</string>
+    <string name="string_main_home">首頁</string>
+    <string name="string_main_webview">流覽器</string>
+    <string name="string_main_tele">電話</string>
+    <string name="string_main_share">分享</string>
+    <string name="string_load_more">載入失敗,點擊重新載入</string>
+    <string name="str_loading_failure">載入資訊失敗</string>
+    <string name="str_finish_if_try_again">再按一次退出</string>
+    <string name="string_bt_setting">設置</string>
+    <string name="str_bt_cancel">取消</string>
+    <string name="str_dialog_loading">正在載入資料...</string>
+    <string name="str_pop_menu_open_wifi">開啟熱點</string>
+    <string name="str_pop_menu_instagram">Instagram</string>
+    <string name="str_pop_menu_reduction">一鍵還原</string>
+    <string name="string_location_share">位置共享</string>
+
+
+    <string name="string_login">登陸</string>
+    <string name="string_register">註冊</string>
+    <string name="string_input_username_phone">請輸入 用戶名/手機號</string>
+    <string name="string_input_pwd">請輸入密碼</string>
+    <string name="string_login_imm">立即登陸</string>
+
+
+
+    <string name="str_pop_menu_help">使用幫助</string>
+    <string name="str_pop_menu_weixin">微信</string>
+    <string name="str_pop_menu_weibo">微博</string>
+    <string name="str_pop_menu_facebook">Facebook</string>
+
+
+    <string name="capital_on">開</string>
+    <string name="capital_off">關</string>
+
+
+    <string name="network_error">網路不給力啊</string>
+
+
+    <string name="str_sdcard_can_not_use">當前SD卡不可用！</string>
+    <string name="str_open_with_sys_web">在流覽器中打開</string>
+    <string name="str_refresh">刷新</string>
+    <string name="str_share">分享</string>
+    <string name="str_share_err">分享失敗</string>
+    <string name="str_copy_link">複製連結</string>
+    　
+    <string name="share_hint_location">當前位置</string>
+    <string name="share_hint_content">輸入您要分享的內容</string>
+    <string name="str_dialog_reseting_portrait">正在修改相片...</string>
+    <string name="str_not_support">抱歉，您的手機不支援其它分享方式</string>
+    <string name="str_reply_now">立即評論</string>
+    <string name="check_version_time">check_version_time</string>
+    <string name="version_desc">version_desc</string>
+    <string name="apk_download_url">apk_download_url</string>
+
+    <string name="str_bt_confirm">確定</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_refresh_failure">刷新資料失敗</string>
+    <string name="str_refresh_reload">載入失敗，點擊再次載入</string>
+    <string name="str_refresh_hasNoMoreData">已經載入全部資料</string>
+
+
+    <string name="str_camera_msg">該功能需要：[ 相機 ] 許可權，請點擊 [設置] 在 [應用資訊] > [許可權] 標籤裡設置</string>
+    <string name="str_location_msg">該功能需要：[ 定位 ] 許可權，請點擊 [設置] 在 [應用資訊] > [定位] 標籤裡設置</string>
+    <string name="str_camera_can_not_use">申請的功能已被系統禁止！</string>
+    <string name="str_camera_can_not_go">不支持您手機的許可權頁面跳轉，請您進入許可權設置頁面解除攝像頭遮罩！</string>
+
+    <string name="bus_routes_for_details">公交路線詳情</string>
+    <string name="driving_route_details">駕車路線詳情</string>
+    <string name="walking_routes_for_details">步行路線詳情</string>
+
+
+    <string name="how_much_take_a_taxi">打車約%1$s元</string>
+    <string name="address_hotel">地址：酒店</string>
+    <string name="str_phone">電話：</string>
+    <string name="latitude_and_longitude_values">經緯度值:</string>
+    <string name="position_description">位置描述:</string>
+    <string name="photo">相片</string>
+    <string name="found_the_new_version">發現新版本</string>
+    <!-- <string name="haave_a_good_job">好好工作</string>-->
+   <!-- <string name="you_click_on_the">你點擊了</string>
+    <string name="you_click_on_the_infowindow">你點擊了infoWindow窗口</string>-->
+    <string name="no_permissions_no_positioning">缺少定位許可權，無法完成定位~</string>
+    <string name="to_locate_failure">定位失敗,</string>
+    <string name="the_starting_point_is_not_set">起點未設置</string>
+    <string name="the_finish_point_is_not_set">終點未設置</string>
+    <string name="are_the_search">正在搜索</string>
+    <string name="a_phone_call">是否呼叫%1$s？</string>
+    <string name="replicated">已複製</string>
+    <string name="come_from">來自 </string>
+    <string name="look_at_the_map">查看地圖</string>
+    <string name="call_phone">撥打電話</string>
+    <string name="the_current_location">當前地點</string>
+
+    <string name="map">地圖</string>
+    <string name="bt_share">分  享</string>
+    <string name="btn_skip"> 跳過 </string>
+    <string name="set_out">出發</string>
+    <string name="please_ente_a_search_keyword">請輸入搜索關鍵字</string>
+    <string name="please_ente_a_address_null">您的當前位置為空</string>
+    <string name="across_the_city_bus">跨城公交</string>
+    <string name="details">詳情</string>
+    <string name="later">以後再說</string>
+    <string name="update_now">立即更新</string>
+
+</resources>
+

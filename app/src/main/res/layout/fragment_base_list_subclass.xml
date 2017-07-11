@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_subclass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_item_width_height"
+        android:background="@color/default_activity_bg"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <com.tgcyber.hotelmobile._widget.MultiViewSwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                                 android:id="@+id/multiviewswiperefreshlayout"
+                                                                 android:layout_width="match_parent"
+        android:layout_below="@id/ll_subclass"
+                                                                 android:layout_height="match_parent"
+                                                                 app:scrollableChildId="@+id/listview">
+
+        <com.tgcyber.hotelmobile.listview.LoadMoreListViewContainer
+            android:id="@+id/loadmore_listview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/nd_bg"
+                android:dividerHeight="@dimen/default_item_split"
+                android:fadingEdge="none"
+                android:drawSelectorOnTop="true"
+                android:listSelector="@drawable/item_listview_item_click"
+                android:footerDividersEnabled="false"
+                android:scrollbars="none"/>
+
+
+        </com.tgcyber.hotelmobile.listview.LoadMoreListViewContainer>
+
+    </com.tgcyber.hotelmobile._widget.MultiViewSwipeRefreshLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+       　
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/ll_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nd_list_error" />
+
+                <TextView
+                    android:id="@+id/tv_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/string_load_more"
+                    android:textColor="#b7b7b7" />
+            </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+<!--    <include
+        android:id="@+id/srl_more"
+        layout="@layout/fragment_base_list_community"/>-->
+
+
+    <!--<RelativeLayout
+        android:id="@+id/gotofollow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        android:id="@+id/gotofollow_layout"-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

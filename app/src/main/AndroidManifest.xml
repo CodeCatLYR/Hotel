@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tgcyber.hotelmobile"
+    >
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <permission
+        android:name="com.tgcyber.hotelmobile.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tgcyber.hotelmobile.permission.C2D_MESSAGE" />
+
+   <!-- android:sharedUserId="android.uid.system"-->
+    <application
+        android:name="com.tgcyber.hotelmobile._activity.HotelApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:icon="@drawable/ic_launcher"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeDay">
+
+       <!-- <activity
+            android:name="com.tgcyber.hotelmobile._activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>-->
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="com.tgcyber.hotelmobile"
+                    android:scheme="hotel" />
+            </intent-filter>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.HOME" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="._activity.LoginActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="._activity.RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+
+
+        <service android:name="com.amap.api.location.APSService"></service>
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.GPSNaviActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.ShareFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.TourismActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity.ContentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.APhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.HotelFacilitiesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="._activity.AppCenterActivity"
+                  android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.tgcyber.hotelmobile._activity.BaseFragmentActivity"
+            android:screenOrientation="portrait" />
+
+<!--
+
+        <activity android:name="com.umeng.message.example.TestActivity" />
+        <activity android:name="com.umeng.message.example.LocalNotificationActivity" />
+        <activity android:name="com.umeng.message.example.AddOrUpdateLocalNotificationActivity" />
+-->
+        <receiver android:name="com.tgcyber.hotelmobile.download.receivers.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tgcyber.hotelmobile._activity.BootBroadcastReceiver">
+        <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </receiver>
+        <service
+            android:name="com.tgcyber.hotelmobile._activity.HotelUpGPSService"
+            android:process=":upgps" />
+
+
+        <service
+            android:name="com.tgcyber.hotelmobile.push.MyPushIntentService"
+            android:process=":push" />
+
+
+        <!--    环信SDK       -->
+
+
+
+        <!-- 使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
+        <!-- 不是必需的服务，可以根据开发者的需求进行设置 -->
+       <!-- <service android:name="com.umeng.message.example.NotificationService" />-->
+
+
+        <!--PushServiceBegin-->
+        <!--   <receiver
+               android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+               android:exported="false" >
+           </receiver>
+           <receiver
+               android:name="com.umeng.message.SystemReceiver"
+               android:process=":push" >
+               <intent-filter>
+                   <action android:name="android.intent.action.BOOT_COMPLETED" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                   <data android:scheme="package" />
+               </intent-filter>
+           </receiver>
+           <receiver
+               android:name="com.umeng.message.MessageReceiver"
+               android:exported="false"
+               android:process=":push" >
+               <intent-filter>
+                   <action android:name="org.agoo.android.intent.action.RECEIVE" />
+               </intent-filter>
+           </receiver>
+           <receiver
+               android:name="com.umeng.message.ElectionReceiver"
+               android:process=":push" >
+               <intent-filter>
+                   <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+
+                   <category android:name="umeng" />
+               </intent-filter>
+           </receiver>
+           <receiver
+               android:name="com.umeng.message.RegistrationReceiver"
+               android:exported="false" >
+               <intent-filter>
+                   <action android:name="com.tgcyber.hotelmobile.intent.action.COMMAND" />
+               </intent-filter>
+           </receiver>
+           <receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
+               <intent-filter>
+                   <action android:name="android.intent.action.BOOT_COMPLETED" />
+               </intent-filter>
+           </receiver>
+
+           <service
+               android:name="com.umeng.message.UmengService"
+               android:exported="true"
+               android:label="PushService"
+               android:process=":push" >
+               <intent-filter>
+                   <action android:name="com.tgcyber.hotelmobile.intent.action.START" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="com.tgcyber.hotelmobile.intent.action.COCKROACH" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                   <category android:name="umeng" />
+               </intent-filter>
+           </service>
+           <service
+               android:name="com.umeng.message.UmengIntentService"
+               android:process=":push" />
+           <service
+               android:name="com.umeng.message.UmengMessageIntentReceiverService"
+               android:exported="true"
+               android:process=":push" >
+               <intent-filter>
+                   <action android:name="org.android.agoo.client.MessageReceiverService" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="org.android.agoo.client.ElectionReceiverService" />
+               </intent-filter>
+           </service>
+           <service
+               android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+               android:exported="false" >
+               <intent-filter>
+                   <action android:name="com.umeng.messge.registercallback.action" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="com.umeng.message.unregistercallback.action" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="com.umeng.message.message.handler.action" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="com.umeng.message.autoupdate.handler.action" />
+               </intent-filter>
+           </service>
+
+           <service
+               android:name="com.umeng.message.UmengDownloadResourceService"
+               android:exported="false" />
+           <service
+               android:name="com.umeng.message.local.UmengLocalNotificationService"
+               android:exported="false" />-->
+        <!--PushServiceEnd-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57b2cb5ce0f55a3f150023db" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="b2e9a1dd9d30599af6ca6c0de9a1f8b5" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="HotelUmeng" >
+        </meta-data>
+
+        <!-- 高德地图ＢＥＧＩＮ DriveRouteDetailActivity-->
+        <activity
+            android:name="._activity.LocationActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity.DriveRouteDetailActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity.MarkerActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity.WalkRouteDetailActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity.RouteActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity.BusRouteDetailActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="de53d7afee7f5d745a6c8bf74fdb6539" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tgcyber.hotelmobile.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"></meta-data>
+        </provider>
+
+
+
+
+        <activity android:name="._activity.ChatActivity"
+                  android:screenOrientation="portrait"/>
+
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 下载文件 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="a475827712#huanxindemo" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service android:name="com.hyphenate.chat.EMChatService" android:exported="true"/>
+        <service android:name="com.hyphenate.chat.EMJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE"
+                 android:exported="true"
+            />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <!-- 高德地图ＢＥＧＩＮ-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+     
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+ <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <!--  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!-- 高德地图ＥＮＤ-->
+
+
+    <!-- ＵＭＥＮＧ推送ＢＥＧＩＮ-->
+    <!-- 必选 -->
+    <!--<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />-->
+   <!-- <uses-permission android:name="android.permission.DEVICE_POWER"/>-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--ＵＭＥＮＧ推送ＥＮＤ-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <!--  <uses-permission android:name="android.permission.REBOOT" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions"/>
+
+</manifest>

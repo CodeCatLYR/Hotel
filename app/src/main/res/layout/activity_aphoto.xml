@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.photoview.PhotoView
+            android:id="@+id/pv_big"
+            android:gravity="center"
+            tools:src="@drawable/icon670_hotel"
+            android:scaleType="centerInside"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/PhotoLayoutFoot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hui_t"
+        android:layout_gravity="bottom"
+        android:paddingBottom="@dimen/default_item_rl_width_height"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/PhotoContentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/default_item_rl_width_height"
+            android:paddingLeft="@dimen/default_item_margin"
+            android:paddingRight="@dimen/default_item_margin"
+            android:paddingTop="@dimen/default_item_margin">
+
+            <LinearLayout
+                android:id="@+id/PhotoTitleLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PhotoTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/base_acitivity_bg"
+                    android:textSize="@dimen/default_item_title" />
+
+                <TextView
+                    android:id="@+id/PhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="  "
+                    android:textColor="@color/setting_divider"
+                    android:textSize="@dimen/default_item_name" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/PhotoContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:scrollbars="vertical"
+                android:textColor="@color/base_item_sub_title_color"
+                android:textSize="@dimen/default_item_name" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/activity_headview_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height" />
+</FrameLayout>

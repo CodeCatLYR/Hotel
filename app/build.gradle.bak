@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+def packageTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.1'
+
+    defaultConfig {
+        applicationId "com.tgcyber.hotelmobile"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 133
+        versionName "1.2.8"
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    //签名
+    signingConfigs {
+        relealse {
+            //这样写就得把签名文件放在项目根目录中
+          
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true     //混淆成功
+            zipAlignEnabled true
+            shrinkResources true    //移除未使用的资源文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.relealse
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为hotel_v1.1.5_2016-02-04_channel.apk
+                        //def fileName = "hotel_v${defaultConfig.versionName}_${packageTime()}_${variant.productFlavors[0].name}.apk"
+                        def fileName = "QuickLink_v${defaultConfig.versionName}_${packageTime()}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+
+        debug {
+//            useProguard false     //不使用混淆器
+          minifyEnabled true     //混淆成功
+            zipAlignEnabled true
+            shrinkResources true    //移除未使用的资源文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //表示debug的时候，也使用签名，这样方便微信登录、分享等测试
+          //signingConfig signingConfigs.relealse
+        }
+        task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+            destinationDir file("$projectDir/libs")
+            baseName "Native_Libs2"
+            extension "jar"
+            from fileTree(dir: "libs", include: "**/*.so")
+            into "lib"
+        }
+        tasks.withType(JavaCompile) {
+            compileTask -> compileTask.dependsOn(nativeLibsToJar)
+        }
+    }
+
+  /*  productFlavors {
+       hotel {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hotel"]
+        }
+    }*/
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+/*dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+   compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+
+}*/
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile('com.bigkoo:convenientbanner:2.0.5') {
+        exclude module: 'appcompat-v7'
+    }
+    compile('com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE') {
+        exclude module: 'appcompat-v7'
+    }
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //推送需要　begin
+    //compile 'com.squareup.okio:okio:1.6.0'
+    //compile 'com.squareup.wire:wire-runtime:1.1.2'
+    //PUSH end
+    compile files('libs/AMap_Location_V2.8.0_20160811.jar')
+   // compile(name:'zteba601lib-release', ext:'aar')
+    compile project(':PushSDK')
+}

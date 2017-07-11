@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fm_base_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            layout="@layout/item_gap_bar"/>
+        <LinearLayout
+            android:id="@+id/ll_fm_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_item_width_height"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

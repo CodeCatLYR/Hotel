@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_acitivity_bg">-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/base_acitivity_bg"
+    android:orientation="vertical">
+    <com.tgcyber.hotelmobile.widget.TextSwitchView
+        android:id="@+id/tsv"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:canLoop="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <LinearLayout
+            android:id="@+id/fl_home_item"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="4dp"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

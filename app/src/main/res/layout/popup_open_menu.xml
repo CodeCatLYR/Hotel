@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:padding="1px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/default_activity_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_popup_open_wifi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/str_pop_menu_open_wifi"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+
+        <TextView
+            android:id="@+id/tv_popup_help"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/str_pop_menu_help"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+
+        <TextView
+            android:id="@+id/tv_popup_browser"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/str_pop_menu_browser"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+
+      <!--  <TextView
+            android:id="@+id/tv_popup_ar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/str_pop_menu_ar"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+
+        <TextView
+            android:id="@+id/tv_popup_weixin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/str_pop_menu_weixin"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+        <TextView
+            android:id="@+id/tv_popup_copylink"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="@string/str_pop_menu_weibo"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+        <TextView
+            android:id="@+id/tv_popup_open_with_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/str_pop_menu_facebook"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+        <TextView
+            android:id="@+id/tv_popup_open_with_instagram"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/article_listview_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/str_pop_menu_instagram"
+            android:textColor="@color/base_item_title_color"
+            android:textSize="@dimen/default_item_name" />-->
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_margin="1dp"
+            android:background="?attr/base_divider" />
+        <TextView
+            android:id="@+id/tv_popup_open_with_reduction"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-1dp"
+            android:background="@color/tv_color_red"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/str_pop_menu_reduction"
+            android:textColor="@color/action_bar_title_color"
+            android:textSize="@dimen/default_item_name" />
+    </LinearLayout>
+
+</LinearLayout>

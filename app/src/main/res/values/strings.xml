@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickLink</string>
+    <string name="string_main_home">首页</string>
+    <string name="string_main_webview">群组</string>
+    <string name="string_main_tele">电话</string>
+    <string name="string_main_share">分享</string>
+    <string name="string_location_share">位置共享</string>
+
+
+    <string name="string_login">登陆</string>
+    <string name="string_register">注册</string>
+    <string name="string_input_username_phone">请输入 用户名/手机号</string>
+    <string name="string_input_pwd">请输入密码</string>
+    <string name="string_login_imm">立即登录</string>
+
+
+    <string name="str_finish_if_try_again">再按一次退出</string>
+
+    <string name="string_title_marketmap">附近资讯</string>
+    <string name="string_title_route">地图路线</string>
+    <string name="string_title_help">帮助</string>
+
+    <string name="string_load_more">加载失败,点击重新加载</string>
+    <string name="str_loading_failure">加载信息失败</string>
+    <string name="str_dialog_loading">正在加载数据...</string>
+    <string name="str_pop_menu_help">使用帮助</string>
+    <string name="str_pop_menu_open_wifi">开启热点</string>
+    <string name="str_pop_menu_ar">AR澳门</string>
+    <string name="str_pop_menu_weixin">微信</string>
+    <string name="str_pop_menu_weibo">微博</string>
+    <string name="str_pop_menu_browser">浏览器</string>
+    <string name="str_pop_menu_facebook">Facebook</string>
+    <string name="str_pop_menu_instagram">Instagram</string>
+    <string name="str_pop_menu_reduction">一键还原</string>
+
+
+    <string name="capital_on">开</string>
+    <string name="capital_off">关</string>
+
+
+    <string name="network_error">网络不给力啊</string>
+    <string name="reset_service_error">一键还原出现异常(Service error)</string>
+
+
+    <string name="str_sdcard_can_not_use">当前SD卡不可用！</string>
+    <string name="str_open_with_sys_web">在浏览器中打开</string>
+    <string name="str_refresh">刷新</string>
+    <string name="str_share">分享</string>
+    <string name="str_share_err">分享失败</string>
+  　
+    <string name="share_hint_location">当前位置</string>
+    <string name="share_hint_content">输入您要分享的内容</string>
+    <string name="str_dialog_reseting_portrait">正在修改相片...</string>
+    <string name="str_not_support">抱歉，您的手机不支持其它分享方式</string>
+
+
+    <string name="str_alert_title">提示信息</string>
+    <string name="str_alert_title2">警告</string>
+    <string name="str_bt_confirm">确定</string>
+    <string name="str_bt_cancel">取消</string>
+    <string name="string_bt_setting">设置</string>
+    <string name="string_bt_see">我知道了</string>
+
+    <!--下载屏保用-->
+    <!--<string name="str_download_and_save">下载成功,图片保存在%1$s</string>-->
+    <string name="str_file_exist">图片已经存在！</string>
+
+
+    <string name="str_refresh_failure">刷新数据失败</string>
+    <string name="str_refresh_reload">加载失败，点击再次加载</string>
+    <string name="str_refresh_hasNoMoreData">别拉了，没有了</string>
+    <!--已经加载全部数据-->
+    <string name="str_wifi_msg">名称:%1$s\n密码:%2$s\n有效期为%3$s分钟，到期后请重新点击开启。</string>
+    <string name="str_reset_msg">您确定要一键还原么？此操作将会清空您的所有个人信息等数据！</string>
+    <string name="str_wifi_err">您的手机不支持此功能。</string>
+    <string name="str_wifi_err1">设置热点出错！</string>
+    <string name="str_camera_msg">该功能需要：[ 相机 ] 权限，请点击 [设置] 在 [应用信息] > [权限] 标签里设置</string>
+    <string name="str_location_msg">该功能需要：[ 定位 ] 权限，请点击 [设置] 在 [应用信息] > [定位] 标签里设置</string>
+    <string name="str_camera_can_not_use">申请的功能已被系统禁止！</string>
+    <string name="str_camera_can_not_go">不支持您手机的权限页面跳转，请您进入权限设置页面解除摄像头屏蔽！</string>
+
+    <string name="bus_routes_for_details">公交路线详情</string>
+    <string name="driving_route_details">驾车路线详情</string>
+    <string name="walking_routes_for_details">步行路线详情</string>
+
+
+    <string name="how_much_take_a_taxi">打车约%1$s元</string>
+    <string name="address_hotel">地址：酒店</string>
+    <string name="str_phone">电话：</string>
+    <string name="latitude_and_longitude_values">经纬度值:</string>
+    <string name="position_description">位置描述:</string>
+    <string name="photo">相片</string>
+　
+    <string name="no_permissions_no_positioning">缺少定位权限，无法完成定位~</string>
+    <string name="to_locate_failure">定位失败,</string>
+    <string name="the_starting_point_is_not_set">起点未设置</string>
+    <string name="the_finish_point_is_not_set">终点未设置</string>
+    <string name="are_the_search">正在搜索</string>
+    <string name="a_phone_call">是否呼叫%1$s？</string>
+    <string name="replicated">已复制</string>
+    <string name="come_from">来自 </string>
+    <string name="look_at_the_map">查看地图</string>
+    <string name="call_phone">拨打电话</string>
+    <string name="the_current_location">当前地点</string>
+
+    <string name="map">地图</string>
+    <string name="bt_share">分  享</string>
+    <string name="btn_skip"> 跳过 </string>
+    <string name="set_out">出发</string>
+    <!--地图查找附近热点-->
+    <string name="please_ente_a_search_keyword">请输入搜索关键字</string>
+    <string name="please_ente_a_address_null">您的当前位置为空</string>
+    <string name="across_the_city_bus">跨城公交</string>
+    <string name="details">详情</string>
+    <string name="later">以后再说</string>
+
+    <string name="no_app">您的手机未安装%1$s，您需要安装%1$s客户端后才能进行此操作。</string>
+    <string name="no_ar">您的手机未安装AR澳门，您需要安装AR澳门客户端后才能进行此操作。</string>
+    <string name="no_weixin">您的手机未安装微信，您需要安装微信客户端后才能进行此操作。</string>
+    <string name="no_sina">您的手机未安装微博，您需要安装微博客户端后才能进行此操作。</string>
+    <string name="no_facebook">您的手机未安装Facebook，您需要安装Facebook客户端后才能进行此操作。</string>
+    <string name="no_instagram">您的手机未安装Instagram，您需要安装Instagram客户端后才能进行此操作。</string>
+    <string name="no_hotelsys">您的手机未安装HotelSys，您需要安装HotelSys客户端后才能进行此操作。</string>
+
+    <string name="detail">详细内容</string>
+    <!---->
+    <string name="update_now">立即更新</string>
+    <string name="found_the_new_version">发现新版本</string>
+    <string name="check_version_time">check_version_time</string>
+    <string name="version_desc">version_desc</string>
+    <string name="apk_download_url">apk_download_url</string>
+
+
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+
+    <string name="cube_mints_exit_tip">再按一次，退出程序</string>
+    <string name="cube_views_load_more_click_to_load_more">点击加载更多</string>
+    <string name="cube_views_load_more_loaded_empty">数据为空</string>
+    <string name="cube_views_load_more_loaded_no_more">全部数据加载完毕</string>
+    <string name="cube_views_load_more_loading">加载中...</string>
+</resources>

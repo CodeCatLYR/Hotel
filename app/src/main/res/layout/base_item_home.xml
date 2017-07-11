@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_base_item_home"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border_shadow_shape">
+
+            <ImageView
+                android:id="@+id/iv_base_item_image"
+                style="@style/item_image"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ll_base_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_item_padding_left_right_small"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/article_listview_item_selector"
+            android:paddingTop="4dp"
+            android:paddingBottom="6dp">
+            <ImageView
+                android:id="@+id/iv_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon54_heart"/>
+            <TextView
+                android:id="@+id/tv_base_item1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                tools:text="美食"
+                android:layout_marginLeft="@dimen/auhtorzone_header_item_padding_top_bottom"
+                android:textColor="@color/base_item_title_color"
+                android:textSize="@dimen/default_item_title"
+                android:gravity="fill_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/article_listview_item_selector"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="4dp">
+            <ImageView
+                android:id="@+id/iv_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon54_heart"/>
+            <TextView
+                android:id="@+id/tv_base_item3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                tools:text="酒吧"
+                android:layout_marginLeft="@dimen/auhtorzone_header_item_padding_top_bottom"
+                android:textColor="@color/base_item_title_color"
+                android:textSize="@dimen/default_item_title"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_base_item2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_item_padding_left_right_small"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/article_listview_item_selector"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp">
+                    <ImageView
+                        android:id="@+id/iv_item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon54_heart"/>
+                    <TextView
+                        android:id="@+id/tv_base_item2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="美食"
+                        android:layout_marginLeft="@dimen/auhtorzone_header_item_padding_top_bottom"
+                        android:textColor="@color/base_item_title_color"
+                        android:textSize="@dimen/default_item_title"
+                        android:gravity="fill_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_item4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/article_listview_item_selector"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="4dp">
+                    <ImageView
+                        android:id="@+id/iv_item4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon54_heart"/>
+                    <TextView
+                        android:id="@+id/tv_base_item4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="酒吧"
+                        android:layout_marginLeft="@dimen/auhtorzone_header_item_padding_top_bottom"
+                        android:textColor="@color/base_item_title_color"
+                        android:textSize="@dimen/default_item_title"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>

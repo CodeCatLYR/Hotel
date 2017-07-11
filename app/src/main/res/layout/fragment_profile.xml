@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/profile_user_rl"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_profile"
+        android:scaleType="fitXY">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_avatar_iv"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_avatar"
+            app:civ_border_color="#b2b2b2"
+            app:civ_border_width="1dp"/>
+
+
+        <TextView
+            android:id="@+id/profile_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_avatar_iv"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/profile_mobile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_username_tv"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/DividerLineStyle"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/profile_message_ll"
+        style="@style/ProfileFragmentLinearStyle">
+
+        <TextView
+            style="@style/ProfileFragmentTvStyle"
+            android:drawableLeft="@drawable/profile_message_icon"
+            android:text="我的消息"/>
+
+        <TextView
+            android:id="@+id/profile_badger_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/shape_redpoint_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:src="@drawable/arrow_r"/>
+    </LinearLayout>
+
+
+    <View
+        style="@style/DividerLineStyle"
+        />
+
+    <LinearLayout
+        android:id="@+id/profile_appcenter_ll"
+        style="@style/ProfileFragmentLinearStyle">
+
+        <TextView
+            style="@style/ProfileFragmentTvStyle"
+            android:drawableLeft="@drawable/profile_app_center"
+            android:text="应用中心"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:src="@drawable/arrow_r"/>
+    </LinearLayout>
+
+
+    <View
+        style="@style/DividerLineStyle"
+        />
+
+
+    <View
+        style="@style/DividerLineStyle"
+        android:layout_marginTop="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/profile_coupons_ll"
+        style="@style/ProfileFragmentLinearStyle">
+
+        <TextView
+            style="@style/ProfileFragmentTvStyle"
+            android:drawableLeft="@drawable/profile_coupons"
+            android:text="优惠券"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:src="@drawable/arrow_r"/>
+    </LinearLayout>
+
+
+    <View
+        style="@style/DividerLineStyle"
+        />
+
+    <LinearLayout
+        android:id="@+id/profile_favourable_ll"
+        style="@style/ProfileFragmentLinearStyle">
+
+        <TextView
+            style="@style/ProfileFragmentTvStyle"
+            android:drawableLeft="@drawable/profile_favourable"
+            android:text="我的优惠"/>
+
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:src="@drawable/arrow_r"/>
+    </LinearLayout>
+
+    <View
+        style="@style/DividerLineStyle"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/profile_logout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/DividerLineStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="退出登陆"
+            android:textColor="#79241c"
+            android:textSize="14sp"/>
+
+        <View
+            style="@style/DividerLineStyle"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/activity_headview_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/webView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <!-- <WebView
+                 android:id="@+id/webView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>-->
+
+            <ProgressBar
+                android:id="@+id/bar"
+                style="@style/progressBarHorizontal_color"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </RelativeLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_marginBottom="@dimen/margin_2"
+                      android:background="@color/white"
+                      android:visibility="gone"
+                      android:layout_gravity="bottom"
+                      android:id="@+id/webview_bottom"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/actionbar_height"
+                      android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/close_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_item_padding"
+                android:gravity="center"
+                android:paddingTop="@dimen/margin_3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_hover"
+                    android:padding="@dimen/auhtorzone_header_item_padding_top_bottom"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="@dimen/margin_3"
+                android:orientation="vertical">
+
+                <com.tgcyber.hotelmobile.audio.AudioRecorderButton
+                    android:id="@+id/id_recorder_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/btn_recorder_normal"
+                    android:gravity="center"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/str_recorder_normal"
+                    android:layout_weight="1"
+                    android:textColor="#727272" >
+                </com.tgcyber.hotelmobile.audio.AudioRecorderButton>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

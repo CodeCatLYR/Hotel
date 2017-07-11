@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\app\libs\AMap3DMap_5.2.0_AMapNavi_5.1.0_20170602.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7596a2075bf7cace58d04646951e147e8fa94135">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\AMap3DMap_5.2.0_AMapNavi_5.1.0_20170602_685dc84429983afc82b8f522b55446efa31d52d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\PushSDK\build\intermediates\bundles\default\libs\alicloud-android-sdk-httpdns-1.0.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d61bb0f23861e5b86d4308a9ed2a4751e95fe03">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\alicloud-android-sdk-httpdns-1.0.7_bd1fa469b215d6431e00450532b68f9db0444dfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\PushSDK\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a908a9ecf77c0bb9ef606b0aa7a0c0dc0612eb02">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\classes_b6198577b780fb84a0a1a8f77ddc714aa8469d1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\easeui\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a6dfb1f21a4d090799d4cd34f3e673ec0d92c69">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\classes_df7ecdc5b85cadc686456dc53832d42054d602ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\app\libs\AMap_2DMap_V2.9.0_20160525.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="46212fcb15e2fcfcef796ab9f7af3fd1364f98f4">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\AMap_2DMap_V2.9.0_20160525_c8152817a1edeaab4210287e4d23b7d7a1a29a5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\app\libs\AMap_Search_V3.4.0_20160811.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="298b0f77ab9b3d6aebae2eef0805e322a947fb4e">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\AMap_Search_V3.4.0_20160811_7080e197f36d57a6d972cf829b35c5617a01f30e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\app\libs\AMap_Location_V2.8.0_20160811.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="137f7ba7c4a05f1fd5b4f2c895949417741934a2">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\AMap_Location_V2.8.0_20160811_79b36e9bcf59da2940472f6f46c0cd6a5dcb2c55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\app\libs\tbs_sdk_v3.1.0.20170301_182143.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f00d52294abe76de6168e4cb964536788bfd336">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\tbs_sdk_v3.1.0.20170301_182143_7eaea5b9484f81351c2b6bf6d66b15a577b7db47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rayls\.android\build-cache\b704d3a60f1791d6300b604f9472f0bf75963062\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7b3e997517ba1b2ef7d22f0aabec3efbd598b613">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\classes_12c4f62fba7be597cfb8d82bcad77bea05fae364.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\easeui\build\intermediates\bundles\default\libs\org.apache.http.legacy.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="49bc2d83ccb0cfe1dbc853e3ba80db0f950ed96d">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\org.apache.http.legacy_4567fa5a43cc24c0ddda20cace80290298f961b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\app\libs\Msc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5b88f9b0f2ebaa459163f646654fbc1e45a34d4">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\Msc_8ebb28d6b71cc4acd807ecd8aa80387c1408a909.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\PushSDK\build\intermediates\bundles\default\libs\utdid4all-1.1.5.3_proguard.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1a4a47c44b68ea5c20e370d37f1779c57211aa68">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\utdid4all-1.1.5.3_proguard_c109c07a56d2025317c9c54085001cf3041bc9d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\easeui\build\intermediates\bundles\default\libs\hyphenatechat_3.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1addfc71c4cdb884cdbe15e71425eb2dfaf1ee8">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\hyphenatechat_3.3.1_11b3866768565f05708d63dcd7cbe4916489b68b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WorkData\Hotel\Hotel\PushSDK\build\intermediates\bundles\default\libs\com.umeng.message_3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd9b76ae7658b50378065169ab0249139ed75552">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\com.umeng.message_3.1.0_c82029b9499d679224c610c0177e60446e1bcfcd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rayls\.android\build-cache\91a6b4ebeddb27615f46ae818e85a46df4e848f4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1aa28b11440779f8a6b0023688e283e9a0dcbb39">
+        <dex dex="E:\WorkData\Hotel\Hotel\app\build\intermediates\pre-dexed\debug\classes_37017f048b9fff6e60f458fbbb82037194b8260e.jar" />
+    </item>
+
+</items>

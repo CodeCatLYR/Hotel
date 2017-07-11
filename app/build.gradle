@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+
+def packageTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.tgcyber.hotelmobile"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 134
+        versionName "1.2.9"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    //签名
+    signingConfigs {
+
+        key {
+            keyAlias 'hotelmobile'
+            keyPassword 'hotel&2016*tgcyber'
+            storeFile file('./hotelmobile.keystore')
+            storePassword 'hotel&2016*tgcyber'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false     //混淆成功
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+
+            buildConfigField("boolean", "debug", "false")
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为hotel_v1.1.5_2016-02-04_channel.apk
+                        //def fileName = "hotel_v${defaultConfig.versionName}_${packageTime()}_${variant.productFlavors[0].name}.apk"
+                        def fileName = "QuickLink_v${defaultConfig.versionName}_${packageTime()}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+
+        debug {
+//            useProguard false     //不使用混淆器
+            buildConfigField("boolean", "debug", "true")
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //表示debug的时候，也使用签名，这样方便微信登录、分享等测试
+            signingConfig signingConfigs.key
+        }
+
+
+//      修改 lyr
+//        task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+//            destinationDir file("$projectDir/libs")
+//            baseName "Native_Libs2"
+//            extension "jar"
+//            from fileTree(dir: "libs", include: "**/*.so")
+//            into "lib"
+//        }
+//        tasks.withType(JavaCompile) {
+//            compileTask -> compileTask.dependsOn(nativeLibsToJar)
+//        }
+    }
+
+    /*  productFlavors {
+         hotel {
+              manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hotel"]
+          }
+      }*/
+
+}
+
+//      修改 lyr
+//repositories {
+//    flatDir {
+//        dirs 'libs'
+//    }
+//}
+
+
+/*dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+   compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+
+}*/
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.bigkoo:convenientbanner:2.0.5') {
+        exclude module: 'appcompat-v7'
+    }
+    compile('com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE') {
+        exclude module: 'appcompat-v7'
+    }
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //推送需要　begin
+    //compile 'com.squareup.okio:okio:1.6.0'
+    //compile 'com.squareup.wire:wire-runtime:1.1.2'
+    //PUSH end
+    // compile(name:'zteba601lib-release', ext:'aar')
+    compile project(':PushSDK')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile project(':easeui')
+}

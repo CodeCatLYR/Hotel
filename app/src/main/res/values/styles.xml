@@ -1,0 +1,215 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+    -->
+    <style name="dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.AppStartLoadTranslucent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+	
+
+        -->
+        <item name="switchStyle">@style/Switch</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <style name="item_image">
+        <item name="android:layout_width">82dp</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/icon670_hotel</item>
+        <item name="android:layout_marginLeft">1.0dp</item>
+        <item name="android:layout_marginRight">1.0dp</item>
+    </style>
+
+    <style name="item_image_order">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/icon670_hotel</item>
+        <item name="android:layout_marginLeft">1.0dp</item>
+        <item name="android:layout_marginRight">1.0dp</item>
+    </style>
+
+    <style name="item_image_services">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/icon670_hotel</item>
+
+    </style>
+
+    <style name="item_image_gap">
+        <item name="android:layout_width">2.0dip</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="progressBarHorizontal_color" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal_load</item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+    </style>
+
+    <style name="Switch">
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="switchTextAppearance">@android:style/TextAppearance.Small</item>
+        <item name="textOn">@string/capital_on</item>
+        <item name="textOff">@string/capital_off</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+    </style>
+    <style name="base_activity_animation_bottom" parent="@android:style/Animation.Activity">
+         <item name="android:activityOpenEnterAnimation">@anim/in_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/in_base_bottom</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_base_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_to_bottom</item>
+        <!--<item name="android:taskOpenEnterAnimation">@anim/in_from_bottom</item>
+        <item name="android:taskOpenExitAnimation">@anim/in_base_bottom</item>
+        <item name="android:taskCloseEnterAnimation">@anim/in_base_bottom</item>
+        <item name="android:taskCloseExitAnimation">@anim/out_to_bottom</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/in_from_bottom</item>
+        <item name="android:taskToFrontExitAnimation">@anim/in_base_bottom</item>
+        <item name="android:taskToBackEnterAnimation">@anim/in_base_bottom</item>
+        <item name="android:taskToBackExitAnimation">@anim/out_to_bottom</item>-->
+    </style>
+    <style name="base_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/in_base</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_base</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_to_right</item>
+        <item name="android:taskOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:taskOpenExitAnimation">@anim/in_base</item>
+        <item name="android:taskCloseEnterAnimation">@anim/in_base</item>
+        <item name="android:taskCloseExitAnimation">@anim/out_to_right</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/in_from_right</item>
+        <item name="android:taskToFrontExitAnimation">@anim/in_base</item>
+        <item name="android:taskToBackEnterAnimation">@anim/in_base</item>
+        <item name="android:taskToBackExitAnimation">@anim/out_to_right</item>
+    </style>
+
+    <style name="ThemeDay" parent="android:Theme.Light">
+        <item name="base_activity_et_bg">@color/base_acitivity_bg</item>
+        <item name="activity_et_content_title_color">@color/base_item_title_color</item>
+        <item name="activity_et_content_title_color_hint">@color/base_item_sub_title_color</item>
+        <item name="activity_content_bg">@color/activity_content_bg</item>
+        <item name="base_divider">@color/base_divider</item>
+        <item name="base_divider_pic">@color/base_divider_pic</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="switchStyle">@style/Switch</item>
+       <!-- <item name="logout_bt_bg">@drawable/btn_logout_selector</item>-->
+        <item name="android:windowAnimationStyle">@style/base_activity_animation</item>
+    </style>
+    <style name="ThemeDayBottom" parent="android:Theme.NoTitleBar">
+        <item name="base_activity_et_bg">@color/base_acitivity_bg</item>
+        <item name="activity_et_content_title_color">@color/base_item_title_color</item>
+        <item name="activity_et_content_title_color_hint">@color/base_item_sub_title_color</item>
+        <item name="activity_content_bg">@color/activity_content_bg</item>
+        <item name="base_divider">@color/base_divider</item>
+        <item name="base_divider_pic">@color/base_divider_pic</item>
+
+        <item name="android:windowAnimationStyle">@style/base_activity_animation_bottom</item>
+    </style>
+    <style name="FullScreenDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="UsualDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:textColor">@color/base_item_title_color</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/default_text_size_16</item>
+    </style>
+    <!-- 自定义Dialog -->
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AudioDialog" parent="@android:style/Theme.Dialog"><!--自定义对话框风格-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DividerLineStyle">
+        <item name="android:layout_height">0.7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/divider_line</item>
+    </style>
+
+
+    <!-- 我的界面Item LinearLayout Style -->
+    <style name="ProfileFragmentLinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 我的界面Item TextView Style -->
+    <style name="ProfileFragmentTvStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textColor">@color/profile_item_textcolor</item>
+        <item name="android:textSize">13.5sp</item>
+    </style>
+
+</resources>

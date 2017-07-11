@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickLink</string>
+    <string name="string_main_home">Home</string>
+    <string name="string_main_webview">Group</string>
+    <string name="string_main_tele">Call</string>
+    <string name="string_main_share">Share</string>
+    <string name="string_location_share">Facilities</string>
+
+    <string name="string_login">Login</string>
+    <string name="string_register">Register</string>
+
+    <string name="str_finish_if_try_again">Press again to exit</string>
+
+    <string name="string_title_marketmap">Info map</string>
+    <string name="string_title_route">Map</string>
+    <string name="string_title_help">Help</string>
+
+    <string name="string_load_more">Click to reload</string>
+    <string name="str_loading_failure">No infomation</string>
+    <string name="str_dialog_loading">Loading...</string>
+    <string name="str_pop_menu_help">Help</string>
+    <string name="str_pop_menu_open_wifi">Hotspot</string>
+    <string name="str_pop_menu_weixin">Wechat</string>
+    <string name="str_pop_menu_weibo">Weibo</string>
+    <string name="str_pop_menu_browser">Browser</string>
+    <string name="str_pop_menu_facebook">Facebook</string>
+    <string name="str_pop_menu_instagram">Instagram</string>
+    <string name="str_pop_menu_reduction">Restore</string>
+
+
+    <string name="capital_on">On</string>
+    <string name="capital_off">Off</string>
+
+
+    <string name="network_error">network not available</string>
+    <string name="reset_service_error">Restore error:(Service error)</string>
+
+
+    <string name="str_sdcard_can_not_use">SD card not available</string>
+    <string name="str_open_with_sys_web">Open in browser</string>
+    <string name="str_refresh">Refresh</string>
+    <string name="str_share">Share</string>
+    <string name="str_share_err">Share error</string>
+    　
+    <string name="share_hint_location">Current location</string>
+    <string name="share_hint_content">Please input content</string>
+    <string name="str_dialog_reseting_portrait">Modifying image...</string>
+    <string name="str_not_support">Sorry, not allow other method</string>
+
+
+    <string name="str_alert_title">Tips</string>
+    <string name="str_alert_title2">Warning</string>
+    <string name="str_bt_confirm">OK</string>
+    <string name="str_bt_cancel">Cancel</string>
+    <string name="string_bt_setting">Setting</string>
+    <string name="string_bt_see">I Know</string>
+
+    <!--下载屏保用-->
+    <!--<string name="str_download_and_save">下载成功,图片保存在%1$s</string>-->
+    <string name="str_file_exist">Image existence!</string>
+
+
+    <string name="str_refresh_failure">Refresh fail</string>
+    <string name="str_refresh_reload">Click to loading again</string>
+    <string name="str_refresh_hasNoMoreData">No more data</string>
+
+    <string name="str_wifi_msg">SSID:%1$s\nPassword:%2$s\nEffective in%3$sMinute,reopen after the expiry.</string>
+    <string name="str_reset_msg">Sure to restore? It will clear all data in this phone.</string>
+    <string name="str_wifi_err">Not support this function</string>
+    <string name="str_wifi_err1">Hotspot fail</string>
+    <string name="str_camera_msg">Camera has not permission</string>
+    <string name="str_location_msg">Location has not permission</string>
+    <string name="str_camera_can_not_use">Function disabled</string>
+    <string name="str_camera_can_not_go">Not permission.</string>
+
+    <string name="bus_routes_for_details">By bus</string>
+    <string name="driving_route_details">By car</string>
+    <string name="walking_routes_for_details">By walk</string>
+
+
+    <string name="how_much_take_a_taxi">Taxi about%1$s</string>
+    <string name="address_hotel">Address：Hotel</string>
+    <string name="str_phone">Telephone：</string>
+    <string name="latitude_and_longitude_values">Location:</string>
+    <string name="position_description">Location desc:</string>
+    <string name="photo">Photo</string>
+    　
+    <string name="no_permissions_no_positioning">No permission to location~</string>
+    <string name="to_locate_failure">Location failure,</string>
+    <string name="the_starting_point_is_not_set">Starting point is not set</string>
+    <string name="the_finish_point_is_not_set">Ending point is not set</string>
+    <string name="are_the_search">Searching</string>
+    <string name="a_phone_call">Sure to call:%1$s？</string>
+    <string name="replicated">Copied</string>
+    <string name="come_from">From </string>
+    <string name="look_at_the_map">Map</string>
+    <string name="call_phone">Call</string>
+    <string name="the_current_location">Current location</string>
+
+    <string name="map">Map</string>
+    <string name="bt_share">Share</string>
+    <string name="btn_skip">Skip</string>
+    <string name="set_out">Go</string>
+    <!--地图查找附近热点-->
+    <string name="please_ente_a_search_keyword">Please input keyword</string>
+    <string name="please_ente_a_address_null">Current location is null</string>
+    <string name="across_the_city_bus">Bus</string>
+    <string name="details">Detail</string>
+    <string name="later">Later</string>
+
+
+
+    <string name="no_weixin">Has not install Wechat in this phone.</string>
+    <string name="no_sina">Has not install Weibo in this phone.</string>
+    <string name="no_facebook">Has not install Facebook in this phone.</string>
+    <string name="no_instagram">Has not install Instagram in this phone.</string>
+    <string name="no_hotelsys">Has not install HotelSys in this phone.</string>
+
+    <string name="detail">Detail</string>
+
+    <string name="update_now">Update Now</string>
+    <string name="found_the_new_version">Find new version</string>
+    <string name="check_version_time">check_version_time</string>
+    <string name="version_desc">version_desc</string>
+    <string name="apk_download_url">apk_download_url</string>
+
+    <string name="cube_mints_exit_tip">Tap back once more to exit.</string>
+    <string name="cube_views_load_more_click_to_load_more">Click to load more</string>
+    <string name="cube_views_load_more_loaded_empty">It is empty. :(</string>
+    <string name="cube_views_load_more_loaded_no_more">All the data has been loaded</string>
+    <string name="cube_views_load_more_loading">loading...</string>
+</resources>

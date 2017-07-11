@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nd_bg">#F2F2F2</color>
+    <color name="arrow_color">#817d8d</color>
+
+    <color name="nd_listview_select_color">#22999999</color>
+    <color name="nd_listview_select_transparent">#00000000</color>
+    <color name="nd_homepage_bottom_text_blue">#00A5FF</color>
+    <color name="nd_homepage_bottom_text_gray">#999999</color>
+    <color name="color_gap_bar">#DEDEDE</color>
+    <color name="actionbar_bg">#1457C8</color>
+    <color name="actionbar_bg2">#333333</color>
+    <color name="action_bar_item_pressed">#33000000</color>
+
+    <color name="statusbar_color">#303F9F</color>
+    <!-- 主体框架背景颜色 -->
+    <color name="frame_bg_color">#EEEEEE</color>
+    <!-- 分割线颜色 -->
+    <color name="divider_line">#DADADA</color>
+    
+    <color name="profile_item_textcolor">#444444</color>
+
+
+    <color name="setting_divider">#dadce6</color>
+    <color name="action_bar_title_color">#ffffff</color>
+    <color name="base_item_title_color">#333333</color>
+    <color name="base_item_name_color">#627EA8</color><!--姓名颜色-->
+    <color name="base_item_sub_title_color">#999999</color>
+    <color name="base_item_news_divider">#e8eced</color>
+    <color name="base_acitivity_bg">#f7f9fa</color>
+
+    <color name="listview_item_focus">#edeff0</color>
+    <color name="default_activity_bg">#ffffff</color>
+    <color name="navigation_main">#F5F6F7</color>
+    <color name="base_divider">#dadce6</color>
+    <color name="base_divider_pic">#30FFFFFF</color>
+    <color name="activity_content_bg">#F2F2F2</color>
+  <!--  <color name="activity_login_content_bg">#ecebf0</color>-->
+    <color name="tv_color_white">#ffffff</color>
+    <color name="tv_color_red">#ff4e46</color>
+    <color name="bottom_bar_bg">#F2F4F5</color>
+    <color name="color_blue">#0000ff</color>
+    <color name="fragment_home_title">#f5f5f5</color>
+
+    <color name="hui_t">#80000000</color>
+    <color name="tou_ming_s">#90000000</color>
+    <color name="black_t">#a0000000</color>
+    <color name="actionbar_bg_white">#f2f4f5</color>
+    <color name="black">#FF000000</color>
+    <color name="tou_ming">#00000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="btn_account_color_press">#ffde362d</color>
+    <color name="btn_account_color_no_press">#fff6554d</color>
+
+    <color name="nd_listview_circleImageView">#eeeeee</color>
+
+    <color name="line">#70999999</color>
+    <color name="gray_background">#dddddd</color>
+    <color name="gray_textview">#aa999999</color>
+    <color name="share_textview">#0169E4</color>
+
+    <color name="category_tab_text">#626970</color>
+    <color name="category_tab_text2">#0B0C0D</color>
+</resources>

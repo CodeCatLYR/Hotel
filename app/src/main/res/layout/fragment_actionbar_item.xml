@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_gap_bar"/>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fm_actionbar_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            tools:src="@drawable/icon36_reply"
+            />
+
+        <TextView
+            android:id="@+id/fm_actionbar_tv"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:layout_toRightOf="@id/fm_actionbar_iv"
+android:layout_centerVertical="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="酒吧"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

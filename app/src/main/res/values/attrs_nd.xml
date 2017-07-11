@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MultiViewSwipeRefreshLayoutAttrs">
+        <attr name="scrollableChildId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayoutAttrs">
+        <attr name="horizontal_spacing" format="dimension" />
+        <attr name="vertical_spacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialProgressBarSupport">
+        <attr name="progressSmallSize" format="boolean" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressBackgroundColor" format="color" />
+    </declare-styleable>
+
+</resources>
