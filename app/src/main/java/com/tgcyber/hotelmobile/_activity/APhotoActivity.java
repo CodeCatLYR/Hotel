@@ -11,7 +11,7 @@ import com.tgcyber.hotelmobile.R;
 import com.tgcyber.hotelmobile._utils.LogCat;
 
 /**
- * Created by Administrator on 2016/8/30.
+ * Created by Administrator on 2016/8/30.22
  */
 public class APhotoActivity extends BaseActionBarActivity{
 
