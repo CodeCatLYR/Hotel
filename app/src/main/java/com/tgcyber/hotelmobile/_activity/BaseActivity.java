@@ -46,7 +46,7 @@ public abstract class BaseActivity extends FragmentActivity {
     protected ImageLoader imageLoader = ImageLoader.getInstance();
     protected DisplayImageOptions headImgOptions,menuImgOptions,itemSmallImgOptions;
   //  protected DisplayImageOptions.Builder builder;
-    abstract int getLayoutId();
+    abstract int getLayoutId();//123
 
     private View dialogView;
 
