@@ -310,6 +310,11 @@
         <activity android:name="._activity.ChatActivity"
                   android:screenOrientation="portrait"/>
 
+
+        <activity android:name="._activity.TranslationActivity"
+                  android:screenOrientation="portrait"/>
+
+
         <!-- 显示下载大图页面 -->
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"

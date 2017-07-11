@@ -12,10 +12,9 @@ import com.tgcyber.hotelmobile._utils.LogCat;
 
 public class BaseFragmentActivity extends  BaseActivity {
 
+    Fragment mFragment;
 
     public static final int FRAGMENT_TYPE_COMMUNITY = 1523;//圈子
-
-
     // 评论
     public static final int FRAGMENT_TYPE_COMMENTS = 1323;
 
@@ -29,7 +28,6 @@ public class BaseFragmentActivity extends  BaseActivity {
         return R.layout.activity_base_list;//activity_base_list;//activity_base_fragment
     }
 
-    Fragment mFragment;
 
     @Override
     void initView() {

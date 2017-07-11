@@ -37,6 +37,7 @@ import com.umeng.message.UTrack;
 import com.umeng.message.UmengMessageHandler;
 import com.umeng.message.UmengNotificationClickHandler;
 import com.umeng.message.entity.UMessage;
+import com.youdao.sdk.app.YouDaoApplication;
 
 import org.apache.http.util.EncodingUtils;
 
@@ -45,6 +46,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class HotelApplication extends Application {
+
+    public static final String YOUDAO_APP_KEY = "3051a8b22b71aea0";
 
     private static  String DISPLAY_WELCOME_KEY = "hotel_welcome_";
     private boolean isRightApplication = false;
@@ -108,6 +111,9 @@ public class HotelApplication extends Application {
 
         //初始化环信
         DemoHelper.getInstance().init(this);
+
+        //初始化 有道翻译
+        YouDaoApplication.init(this, YOUDAO_APP_KEY);
     }
     private void initShare()
     {

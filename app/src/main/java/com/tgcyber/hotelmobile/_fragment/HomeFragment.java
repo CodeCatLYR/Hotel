@@ -35,6 +35,7 @@ import com.tgcyber.hotelmobile._activity.InformationActivity;
 import com.tgcyber.hotelmobile._activity.LoginActivity;
 import com.tgcyber.hotelmobile._activity.MainActivity;
 import com.tgcyber.hotelmobile._activity.TourismActivity;
+import com.tgcyber.hotelmobile._activity.TranslationActivity;
 import com.tgcyber.hotelmobile._activity.WebViewActivity;
 import com.tgcyber.hotelmobile._bean.BannerEntity;
 import com.tgcyber.hotelmobile._utils.LogCat;
@@ -371,6 +372,10 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener, 
         return "位置共享".equals(name) || "Facilities".equals(name);
     }
 
+    private boolean isTranslationTool(String name){
+        return "翻译工具".equals(name) || name.contains("ranslation");
+    }
+
     //二级页面跳转
     View.OnClickListener itemClick = new View.OnClickListener() {
 
@@ -384,7 +389,13 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener, 
                 intent.putExtra(KeyConstant.DATA, item);
                 startActivity(intent);
                 return;
+            }else if(item != null && isTranslationTool(item.name)){
+
+                Intent intent = new Intent(getActivity(), TranslationActivity.class);
+                startActivity(intent);
+                return;
             }
+
 
 
             LogCat.i("HomeFragment", "id:" + item.id);

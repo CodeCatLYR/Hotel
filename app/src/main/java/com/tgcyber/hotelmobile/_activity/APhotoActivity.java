@@ -50,7 +50,6 @@ public class APhotoActivity extends BaseActionBarActivity{
             PhotoLayoutFoot.setVisibility(View.GONE);
         }
         if (shareContent != null &&shareContent.length() > 0) {
-
             photoContent.setText(shareContent);
             photoContent.setVisibility(View.VISIBLE);
         }
