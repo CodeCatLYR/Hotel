@@ -12,7 +12,7 @@
         android:layout_height="@dimen/actionbar_height"/>
 
     
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="108dp"
         android:hint="请在此输入需要翻译的内容"
