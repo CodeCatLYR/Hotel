@@ -16,7 +16,7 @@ public class TranslationActivity extends BaseActionBarActivity {
     protected void initView() {
         super.initView();
         setActionbarLeftDrawable(R.drawable.back);
-        setActionbarTitle("翻译");
+        setActionbarTitle("翻译工具");
 
 
     }
