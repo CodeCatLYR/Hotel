@@ -8,7 +8,7 @@ import com.tgcyber.hotelmobile.R;
 
 public class ChatActivity extends BaseActionBarActivity {
     private EaseChatFragment chatFragment;
-//    String toChatUsername;
+//    String toChatUsername;//123
 
     @Override
     int getLayoutId() {
